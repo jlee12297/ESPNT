@@ -36,7 +36,6 @@ fetch(playerUrl)
   })
   .then(function (data) {
     console.log(data.league.standard)
-    console.log(data.league.standard[0].firstName)
 
     //match user search to player name in API, get desired info
     for (i = 0; i < data.league.standard.length; i++) {
@@ -53,6 +52,20 @@ fetch(playerUrl)
 
         }
     }
+
+    //api site uses this format to fetch player's stats using their NBA ID, which I have saved using the previous API above
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '4cb18c9db1msh437e8bcf466e2e6p142b43jsn9e402af4b51d',
+        'X-RapidAPI-Host': 'nba-stats4.p.rapidapi.com'
+      }
+    };
+
+    fetch('https://nba-stats4.p.rapidapi.com/per_game_career_regular_season/' + playerID + '', options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
 
   })
 
