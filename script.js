@@ -1,18 +1,6 @@
 var searchFirstName
 var searchLastName
 
-//fetching from NBA API
-/*
-nbaUrl = ' https://www.balldontlie.io/api/v1/season_averages?season=2018&players';
-
-fetch(nbaUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data)
-  })
-  */
 
 //user input searches for player, split input into first name and last name values for searching
 var searchButton = $('#searchButton');
@@ -62,13 +50,27 @@ fetch(playerUrl)
       }
     };
 
-    fetch('https://nba-stats4.p.rapidapi.com/per_game_career_regular_season/' + playerID + '', options)
-      .then(response => response.json())
-      .then(response => console.log(response))
+   
+   fetch('https://nba-stats4.p.rapidapi.com/per_game_career_regular_season/' + playerID + '', options)
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })   
+   // .then(response => response.json())
+      .then(function (data) {
+        console.log(data);
+        var ppg = data.pts_per_game;
+        var apg = data.ast_per_game;
+        var rpg = data.reb_per_game;
+        var orpg = data.oreb_per_game;
+        var drpg = data.dreb_per_game;
+
+      })
       .catch(err => console.error(err));
+
 
   })
 
-
+// search button prevent autorefresh
   return false;
 })

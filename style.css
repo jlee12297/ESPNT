@@ -23,3 +23,8 @@ body {
   .jumbotron {
     margin-left: 240px;
   }
+
+  #statTable {
+    margin-top: 20px;
+    margin-left: 240px;
+  }
