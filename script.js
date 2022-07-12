@@ -59,11 +59,32 @@ fetch(playerUrl)
    // .then(response => response.json())
       .then(function (data) {
         console.log(data);
+        // all variables for the grabbed career stats of the chosen player
+        var gp = data.gp;
+        var mpg = data.min / gp;
         var ppg = data.pts_per_game;
         var apg = data.ast_per_game;
         var rpg = data.reb_per_game;
         var orpg = data.oreb_per_game;
         var drpg = data.dreb_per_game;
+        var spg = data.stl_per_game;
+        var bpg = data.blk_per_game;
+        var fgpct = data.fg_pct;
+        var fg3ptpct = data.fg3_pct;
+        var ftpct = data.ft_pct;
+        
+        document.getElementById("gp").textContent = gp
+        document.getElementById("mpg").textContent = mpg.toFixed(1)
+        document.getElementById("ppg").textContent = ppg
+        document.getElementById("apg").textContent = apg
+        document.getElementById("rpg").textContent = rpg
+        document.getElementById("orpg").textContent = orpg
+        document.getElementById("drpg").textContent = drpg
+        document.getElementById("spg").textContent = spg
+        document.getElementById("bpg").textContent = bpg
+        document.getElementById("fgpct").textContent = fgpct
+        document.getElementById("fg3ptpct").textContent = fg3ptpct
+        document.getElementById("ftpct").textContent = ftpct
 
       })
       .catch(err => console.error(err));
