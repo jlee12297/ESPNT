@@ -25,6 +25,7 @@ input {
     width: 340px;
 }
 
+<<<<<<< HEAD
 input:hover {
     background-color: #dd0000;
 }
@@ -41,3 +42,16 @@ input:hover {
     height: 50px;
 }
 
+=======
+.stat-cards-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.stat-cards {
+    border: 1px solid black;
+    padding: 10px 50px;
+    margin: 10px;
+}
+>>>>>>> develop
