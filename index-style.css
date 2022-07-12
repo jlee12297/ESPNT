@@ -44,16 +44,30 @@ body {
     height: 90vh;
     display: inline-block;
     margin-right: 0px;
+    position: relative;
 }
 
-.tooltiptext {
-    display: none;
-    position: absolute; 
+#nfl-cont:hover {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+#nfl-cont div {
+    position: absolute;
     bottom: 0;
-    left: 0;
     right: 0;
-}
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    bottom: 50vh;
+    right: 25vw;
 
-.tooltiptext:hover {
-    display: block; 
+
 } 
+
+#nfl-cont:hover div {
+    visibility: visible;
+    opacity: 0.7;
+}
