@@ -12,7 +12,7 @@ body {
 
 
 #logo-img {
-    width: 49vw; 
+    width: 49vw;
     margin: 0%;
     padding: 0%;
     height: 90vh;
@@ -21,7 +21,7 @@ body {
 }
 
 #nfl-img {
-    width: 49vw; 
+    width: 49vw;
     margin: 0%;
     padding: 0%;
     height: 90vh;
@@ -38,7 +38,7 @@ body {
 }
 
 #nfl-cont {
-    width: 49vw; 
+    width: 49vw;
     margin: 0%;
     padding: 0%;
     height: 90vh;
@@ -62,10 +62,7 @@ body {
     color: white;
     font-size: 50px;
     bottom: 50vh;
-    right: 25vw;
-
-
-} 
+}
 
 #nfl-cont:hover div {
     visibility: visible;
