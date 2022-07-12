@@ -1,3 +1,30 @@
 body {
-    background-color: aqua;
+    background-color: black;
+}
+
+.main-header {
+    text-align: center;
+    border-bottom: 10px solid orange;
+    color: orange;
+    background-color: black;
+    margin-top: 0px;
+}
+
+
+#logo-img {
+    width: 49vw; 
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    display: inline-block;
+    border: 0.25px grey;
+}
+
+#nfl-img {
+    width: 49vw; 
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    display: inline-block;
+    margin-right: 0px;
 }
