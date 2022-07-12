@@ -5,7 +5,8 @@ var searchLastName
 //user input searches for player, split input into first name and last name values for searching
 var searchButton = $('#searchButton');
 searchButton.on('click', function() {
-
+    window.location.href = "third.html"
+    
     userNameInput = $('input[id="userInput"]').val();
     searchName = [];
     searchName = userNameInput.split(' ');
@@ -37,6 +38,7 @@ fetch(playerUrl)
             playerHeadshot = document.getElementById("playerHeadshot")
             src = 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/' + playerID + '.png'
             playerHeadshot.src = src
+            document.getElementById("playerName").textContent = firstName + " " + lastName
 
         }
     }
