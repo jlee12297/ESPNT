@@ -1,14 +1,5 @@
-var searchFirstName
-var searchLastName
-
-
-//user input searches for player, split input into first name and last name values for searching
-var searchButton = $('#searchButton');
-searchButton.on('click', function() {
-    
-    userNameInput = $('input[id="userInput"]').val();
-    localStorage.setItem("playerName", userNameInput)
-    window.location.href = "third.html"
+    var userNameInput = localStorage.getItem("playerName");
+    console.log(userNameInput)
     searchName = [];
     searchName = userNameInput.split(' ');
     console.log("Player First Name: " + searchName[0]);
@@ -95,6 +86,3 @@ fetch(playerUrl)
 
   })
 
-// search button prevent autorefresh
-  return false;
-})
