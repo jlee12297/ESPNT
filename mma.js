@@ -15,7 +15,7 @@ $("#myButton").click(function () {
 })
 
 function displaySearchResults(data) {
-    $('header').css('display', 'none')
+    $('.container').css('display', 'none')
     $('.carousel-slider').css('display', 'none')
     $('footer').css('display', 'none')
     var fighterName = $('<div></div>').addClass('fighter-name')
