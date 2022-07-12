@@ -28,3 +28,32 @@ body {
     display: inline-block;
     margin-right: 0px;
 }
+
+#logo-img:hover {
+    opacity: 0.5;
+}
+
+#nfl-img:hover {
+    opacity: 0.5;
+}
+
+#nfl-cont {
+    width: 49vw; 
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.tooltiptext {
+    display: none;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.tooltiptext:hover {
+    display: block; 
+} 
