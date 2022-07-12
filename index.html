@@ -1,93 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>ESPN'T</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index-style.css" />
 
-  <body>
+  <title>ESPN'T</title>
+</head>
 
-    <!-- test jumbotron to test player portrait fetching-->
-    <header class="jumbotron">
-      <h1 class="display-3">Player Headshot Test</h1>
-      <p class="lead">Search for a player's headshot!</p>
-      <img src="" alt="player headshot" id="playerHeadshot">
-  
-    </header>
-
-    <!-- Sidebar -->
-    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-      <div class="position-sticky">
-          <div class="list-group list-group-flush mx-3 mt-4">
-  
-              <!-- Search Form -->
-              <h3>Search for a Player!</h3>
-              <form class="form-inline md-form mr-auto mb-4">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="userInput">
-                  <button class="btn blue-gradient btn-rounded btn-sm my-0btn btn-outline-success btn-rounded btn-sm my-0" type="submit" id="searchButton">Search</button>
-              </form>
-  
-              <!-- add to list search history via jscript-->
-              <h3>Player Search History: </h3>
-              <ul></ul>
-          </div>
-      </div>
-      </nav> 
-      <!-- End of Sidebar -->
-
-      <table id="statTable">
-        <thead>
-          <tr>
-              <th>GP</th>
-              <th>MPG</th>
-              <th>PPG</th>
-              <th>APG</th>
-              <th>RPG</th>
-              <th>ORPG</th>
-              <th>DRPG</th>
-              <th>SPG</th>
-              <th>BPG</th>
-              <th>FG%</th>
-              <th>3pt FG%</th>
-              <th>FT%</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td id="gp"></td>
-            <td id="mpg"></td>
-            <td id="ppg"></td>
-            <td id="apg"></td>
-            <td id="rpg"></td>
-            <td id="orpg"></td>
-            <td id="drpg"></td>
-            <td id="spg"></td>
-            <td id="bpg"></td>
-            <td id="fgpct"></td>
-            <td id="fg3ptpct"></td>
-            <td id="ftpct"></td>
-          </tr>
-        </tbody>
-      </table>
+<body>
+  <h1 class="main-header">ESPN'T</h1>
+  <a href=""> <img id="logo-img" src="images/nba-logo.jpeg" alt=""></a>
+  <div id="nfl-cont" class="tooltip">
+    <img id="nfl-img" src="images/nfl-logo.jpeg" alt="">
+    <div>Coming Soon!</div>
+  </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
 </html>

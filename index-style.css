@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+}
+
+.main-header {
+    text-align: center;
+    border-bottom: 10px solid orange;
+    color: orange;
+    background-color: black;
+    margin-top: 0px;
+}
+
+
+#logo-img {
+    width: 49vw; 
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    display: inline-block;
+    border: 0.25px grey;
+}
+
+#nfl-img {
+    width: 49vw; 
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+#logo-img:hover {
+    opacity: 0.5;
+}
+
+#nfl-img:hover {
+    opacity: 0.5;
+}
+
+#nfl-cont {
+    width: 49vw; 
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    display: inline-block;
+    margin-right: 0px;
+    position: relative;
+}
+
+#nfl-cont:hover {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+#nfl-cont div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    bottom: 50vh;
+    right: 25vw;
+
+
+} 
+
+#nfl-cont:hover div {
+    visibility: visible;
+    opacity: 0.7;
+}

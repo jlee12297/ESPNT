@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/third.page.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <nav>
+      <div class="nav ">
+        <a href="#!" class="brand-logo black-text text-lg center">ESPN'T</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Search Bar</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Search Bar</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+
+
+<body>
+    <main>
+        <div class="row container">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="">
+                  <span class="card-title"></span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Players Name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <table class="highlight" id="statTable">
+        <thead>
+          <tr>
+              <th>GP</th>
+              <th>MPG</th>
+              <th>PPG</th>
+              <th>APG</th>
+              <th>RPG</th>
+              <th>ORPG</th>
+              <th>DRPG</th>
+              <th>SPG</th>
+              <th>BPG</th>
+              <th>FG%</th>
+              <th>3pt FG%</th>
+              <th>FT%</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="gp"></td>
+            <td id="mpg"></td>
+            <td id="ppg"></td>
+            <td id="apg"></td>
+            <td id="rpg"></td>
+            <td id="orpg"></td>
+            <td id="drpg"></td>
+            <td id="spg"></td>
+            <td id="bpg"></td>
+            <td id="fgpct"></td>
+            <td id="fg3ptpct"></td>
+            <td id="ftpct"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./script.js"></script>
+</html>
