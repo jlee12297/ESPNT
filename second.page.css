@@ -16,6 +16,10 @@ body {
     box-sizing: content-box;
 }
 
+.search-results-container {
+    margin: 50px;
+}
+
 .stat-cards-container {
     margin-top: 50px;
     margin-left: 50px;

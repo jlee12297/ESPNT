@@ -15,8 +15,8 @@ $("#myButton").click(function () {
 })
 
 function displaySearchResults(data) {
-    $('header').css('display', 'none')
     $('.carousel-slider').css('display', 'none')
+    $('.container').css('display', 'none')
     $('footer').css('display', 'none')
     var fighterName = $('<div></div>').addClass('fighter-name')
     $('.search-results-container').append(fighterName)
@@ -43,8 +43,12 @@ function displaySearchResults(data) {
     statCards.append(`<p>Sig Strike Per Min: ${data.CareerStats.SigStrikesLandedPerMinute}</p>`)
     statCards.append(`<p>Submission Average: ${data.CareerStats.SubmissionAverage}</p>`)
     statCards.append(`<p>Takedown Average: ${data.CareerStats.TakedownAverage}</p>`)
-    $('.search-results-container').append(`<button>Go Back</button>`).addClass('refresh-button')
+    $(".refresh-button").append(`<button>Go Back</button>`).addClass('refresh-button')
     $('.refresh-button').click(function () {
         location.href = ""
     })
 }
+
+// {/* <div class="search-results-container">
+// <div class="refresh-button"></div>
+// </div> */}
