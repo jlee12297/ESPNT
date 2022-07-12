@@ -1,6 +1,9 @@
 var searchFirstName
 var searchLastName
 
+<<<<<<< HEAD
+//instance.next(5);
+=======
 
 //user input searches for player, split input into first name and last name values for searching
 var searchButton = $('#searchButton');
@@ -98,3 +101,4 @@ fetch(playerUrl)
 // search button prevent autorefresh
   return false;
 })
+>>>>>>> develop

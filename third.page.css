@@ -1,7 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Montserrat:wght@500&display=swap');
+
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #DD0000;
+}
+
+.page-footer {
+    background-color: #2B2C2D;
+    text-align: center;
 }
 
 .card-image {
@@ -10,5 +23,19 @@
 }
 
 .row {
-    margin-left: 50%;
+    margin-right: 20%;
+}
+
+table {
+    width: 75%;
+    border: thin solid black;
+    margin-left: 10%;
+}
+
+tr {
+    border: thin solid black;
+}
+
+header {
+    background-color: #DD0000;
 }
