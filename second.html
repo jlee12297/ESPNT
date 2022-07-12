@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/second.page.css" />
+    <link rel="stylesheet" href="./second.page.css" />
 
     <title>ESPN'T</title>
   </head>
@@ -41,8 +41,8 @@
       </ul>
       <div class="container">
         <form class="container">
-          <input type="text" placeholder="search name" name="q">
-          <button type="submit" id="myButton">search</button>
+          <input type="text" placeholder="search name" name="q" id="userInput">
+          <button type="submit" id="searchButton">Search</button>
           <button type="random">random</button>
         </form>
       </div>
@@ -95,11 +95,7 @@
         var instances = M.Sidenav.init(elems, {});
       })
     </script>
-    <script type="text/javascript">
-      document.getElementById("myButton").onclick = function () {
-          location.href = "";
-      };
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
