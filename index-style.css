@@ -83,6 +83,37 @@ body {
     opacity: 0.5;
 }
 
+#mma-cont:hover {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+#mma-cont div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    bottom: -25vh;
+    right: 25vw;
+
+
+} 
+
+#mma-cont:hover div {
+    visibility: visible;
+    opacity: 0.7;
+}
+
 nav {
     background-color: #dd0000;
+}
+
+.page-footer {
+    border-top: #dd0000 solid;
+    text-align: center;
+    background-color: #2B2C2D;
 }
