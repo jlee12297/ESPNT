@@ -1,17 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;400;600&family=Vesper+Libre:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Montserrat:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #dd0000;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: black;
     font-family: 'Arima', cursive;
     font-family: 'Vesper Libre', serif;
 }
 
-.container {
-    box-sizing: content-box;
+input {
+    background-color: black;
+    height: 44px;
+    color: white;
+    width: 340px;
 }
+
+input:hover {
+    background-color: #dd0000;
+}
+
+.page-footer {
+    text-align: center;
+    background-color: #2B2C2D;
+}
+
+.carousel-fixed-item {
+    margin-bottom: 44%;
+    margin-left: 40%;
+    width: 270px;
+    height: 50px;
+}
+
