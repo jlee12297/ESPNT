@@ -2,7 +2,7 @@ $("#myButton").click(function () {
     fetch(`https://api.sportsdata.io/v3/mma/scores/json/Fighters?key=2dd3dd371b814059ad24ceadacb22a06`)
         .then(response => response.json())
         .then(data => {
-            var nameInput = $('#name-search').val()
+            var nameInput = $('#userInput').val()
             var searchName = nameInput.split(" ")
             var mmaFightersData = null
             for (i = 0; i < data.length; i++) {
@@ -15,7 +15,6 @@ $("#myButton").click(function () {
 })
 
 function displaySearchResults(data) {
-    $('header').css('display', 'none')
     $('.carousel-slider').css('display', 'none')
     $('footer').css('display', 'none')
     var fighterName = $('<div></div>').addClass('fighter-name')
@@ -43,8 +42,4 @@ function displaySearchResults(data) {
     statCards.append(`<p>Sig Strike Per Min: ${data.CareerStats.SigStrikesLandedPerMinute}</p>`)
     statCards.append(`<p>Submission Average: ${data.CareerStats.SubmissionAverage}</p>`)
     statCards.append(`<p>Takedown Average: ${data.CareerStats.TakedownAverage}</p>`)
-    $('.search-results-container').append(`<button>Go Back</button>`).addClass('refresh-button')
-    $('.refresh-button').click(function () {
-        location.href = ""
-    })
 }

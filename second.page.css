@@ -41,3 +41,20 @@ input:hover {
     height: 50px;
 }
 
+/*MMA page styling*/
+.search-results-container {
+    color: white;
+    margin: 50px;
+}
+
+.stat-cards-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.stat-cards {
+    border: 1px solid white;
+    padding: 10px 50px;
+    margin: 10px;
+}
