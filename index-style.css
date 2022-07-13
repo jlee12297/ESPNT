@@ -86,3 +86,9 @@ body {
 nav {
     background-color: #dd0000;
 }
+
+.page-footer {
+    border-top: #dd0000 solid;
+    text-align: center;
+    background-color: #2B2C2D;
+}
