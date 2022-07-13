@@ -30,6 +30,8 @@ table {
     width: 75%;
     border: thin solid black;
     margin-left: 10%;
+    color: black;
+    background-color: white;
 }
 
 tr {
@@ -38,4 +40,10 @@ tr {
 
 header {
     background-color: #DD0000;
+}
+
+body {
+    background-image: url("images/basketball.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

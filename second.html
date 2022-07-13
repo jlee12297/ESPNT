@@ -16,23 +16,9 @@
     />
     <link rel="stylesheet" href="second.page.css" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/second.page.css" />
 
   <title>ESPN'T</title>
 </head>
-
-<body>
-  <header>
-    <nav>
-      <div class="nav ">
-        <a href="#!" class="brand-logo black-text text-lg center">ESPN'T</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Search Bar</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
 
   <body>
     <header>
@@ -57,8 +43,8 @@
     <div class="carousel carousel-slider">
       <div class="container whitesmoke">
         <form class="container carousel-fixed-item">
-          <input type="white-text" placeholder="search athletes name" name="q">
-          <button type="submit" id="myButton"><i class="small material-icons waves-effect waves-light blue">search</i></button>
+          <input id="userInput" type="white-text" placeholder="search athletes name" name="q">
+          <button type="submit" id="searchButton"><i class="small material-icons waves-effect waves-light blue">search</i></button>
           <button type="random"><i class="small material-icons waves-effect waves-light blue">shuffle</i></button>
         </form>
       </div>
@@ -75,7 +61,7 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Intagram</a><i class="large material-icons"></i></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Intagram</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
               <li><a class="grey-text text-lighten-3" href="#!">Discord</a></li>
@@ -83,37 +69,6 @@
           </div>
         </div>
       </div>
-      <div class="page-footer">
-        <div class="container-footer">
-      </div>
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Search Bar</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="container">
-      <form class="container">
-        <input type="text" placeholder="search name" name="q">
-        <button type="submit" id="myButton">search</button>
-        <button type="random">random</button>
-      </form>
-    </div>
-  </header>
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Intagram</a><i class="large material-icons"></i></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Discord</a></li>
-        </ul>
-      </div>
-    </div>
-    </div>
     <div class="footer-copyright">
       <div class="container">
         © 2022 Copyright
@@ -126,13 +81,12 @@
     <script>
       document.addEventListener('DOMContentLoaded', function(){
         var cars=document.querySelectorAll('.carousel')
-        M.Carousel.init(cars,{
+          M.Carousel.init(cars,{
           fullWidth: true,
           indicators: true,
-          duration: 800,
-        })
+          duration: 400,
+       })
       })
-
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -140,15 +94,8 @@
       var instances = M.Sidenav.init(elems, {});
     })
   </script>
-  <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-      location.href = "";
-    };
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+</body>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
